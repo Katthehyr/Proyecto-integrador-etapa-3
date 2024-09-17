@@ -1,0 +1,14 @@
+body
+{
+    background-image: url(/public/img/neko-anime-girl-and-cats-thumb-364x205.jpg);
+    padding: 1rem;
+    
+  }
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+}
