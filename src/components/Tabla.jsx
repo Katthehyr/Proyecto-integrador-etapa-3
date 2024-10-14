@@ -6,6 +6,8 @@ import ProductosContext from "../context/ProductosContext"
 const Tabla = () => {
 
     const { productos } = useContext(ProductosContext)
+    console.log(productos)
+
     return (
         <table className="tabla-alta">
             <thead>
@@ -24,14 +26,13 @@ const Tabla = () => {
 
             <tbody>
 
-                {
-                    productos && productos.map (producto => (
+            {
+          productos && productos.map( (producto, idx) => (
+            <TablaFila key={producto.id+idx} producto={producto} />
+          ))
 
-                        <TablaFila key={producto.id} producto={producto} />
-
-
-                    ))
-                }
+        }
+    
 
                
 

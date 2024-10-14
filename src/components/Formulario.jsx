@@ -43,11 +43,12 @@ const Formulario = () => {
             }
 
             handleReset()
-            
-        } catch (error) {
-            console.error('[handleSubmit]',error)
-            
-        }
+      
+    } catch (error) {
+      console.error('[handleSubmit]', error)
+    }
+
+  
 
 
     }
